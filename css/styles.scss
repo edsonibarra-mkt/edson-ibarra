@@ -1,0 +1,61 @@
+$bp-small: 600px;
+$bp-medium: 992px;
+$bp-large: 1200px;
+
+:root{
+    --color-primary: #009688; // Teal
+    --color-secondary: #edf3f3; // Teal lighten-4
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+//main
+.about{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    h4{
+        font-weight: 500;
+        margin-bottom: 50px;
+        letter-spacing: .1rem;
+    }
+
+.contact{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    h4{
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: .1rem;
+}    
+    .row{
+        align-items: center;
+    }
+    &__desc{
+        @media only screen and (max-width: $bp-small){
+        button{
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &__image{
+        img{
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+}
+
+//footer
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
